@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:id="@+id/defau"
+        android:title="Mặc Định"
+        android:icon="@drawable/back"
+        />
+
+
+    <item android:title="Tìm theo tên"
+        android:id="@+id/timTheoTen"
+        app:showAsAction="never"
+           />
+    <item android:title="Sắp xếp theo tên"
+        android:id="@+id/sapXep"/>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/edComfirmPassword"
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/bg_edit_selector"
+        android:drawableStart="@drawable/ic_lock"
+
+
+        android:drawablePadding="10.40dp"
+        android:ems="10"
+
+
+        android:hint="Nhập lại Password"
+        android:inputType="textPassword"
+
+
+        android:maxLines="1"
+
+        android:paddingStart="26.00dp"
+
+
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColorHint="@color/secondaryText"
+        android:textSize="15.60sp"
+
+
+        android:textStyle="bold"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <Button
+        android:id="@+id/btnBack"
+
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="10dp"
+
+
+        android:text="Trờ về"
+
+
+        app:backgroundTint="#9B61E3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+
+
+        android:background="@drawable/bg_edit_selector"
+        android:drawableStart="@drawable/ic_lock"
+
+
+        android:drawablePadding="10.40dp"
+        android:ems="10"
+
+
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="26.00dp"
+        android:paddingLeft="5dp"
+
+
+        android:singleLine="true"
+
+
+        android:textColorHint="@color/secondaryText"
+        android:textSize="15.60sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUser" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+
+        android:gravity="center"
+        android:text="Đăng Ký"
+        android:textColor="@color/black"
+
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="48dp"
+        android:background="@color/black"
+
+
+        android:text="Đăng Kí"
+
+        android:textColor="@color/white"
+
+
+        app:backgroundTint="#BA85FB"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edComfirmPassword" />
+
+    <EditText
+        android:id="@+id/edUser"
+
+
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_edit_selector"
+
+        android:drawableStart="@drawable/ic_message"
+        android:drawablePadding="10.40dp"
+        android:ems="10"
+
+
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+
+
+        android:paddingStart="26.00dp"
+        android:paddingLeft="5dp"
+
+        android:singleLine="true"
+
+        android:textColorHint="@color/secondaryText"
+
+        android:textSize="15.60sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSignUp" />
+
+    <TextView
+        android:id="@+id/txtSignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Tham gia cùng chúng tôi"
+        android:textColor="@color/black"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSignUp"
+        app:layout_constraintVertical_bias="0.297" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

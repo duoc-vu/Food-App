@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/diet" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hôm nay ăn gì?"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <EditText
+        android:id="@+id/edUserIn"
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="104dp"
+
+
+        android:background="@drawable/bg_edit_selector"
+        android:drawableStart="@drawable/ic_message"
+        android:drawablePadding="10.40dp"
+        android:hint="Email hoặc số điện thoại"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingStart="26.00dp"
+
+        android:singleLine="true"
+
+        android:textColorHint="@color/secondaryText"
+
+        android:textSize="15.60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <EditText
+        android:id="@+id/edPasswordIn"
+        android:layout_width="314dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+
+
+
+        android:background="@drawable/bg_edit_selector"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10.40dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="26.00dp"
+        android:singleLine="true"
+
+        android:textColorHint="@color/secondaryText"
+
+        android:textSize="15.60sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUserIn" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:text="Đăng nhập"
+
+
+
+
+        app:backgroundTint="#BA85FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordIn"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/btnResign"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:text="Đăng kí"
+
+
+
+        app:backgroundTint="#BA85FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgSms"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgIns"
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordIn"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/snapchat4" />
+
+    <ImageView
+        android:id="@+id/imgIns"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgFB"
+        app:layout_constraintTop_toBottomOf="@+id/btnResign"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/instagram4" />
+
+    <ImageView
+        android:id="@+id/imgFB"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResign"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/facebook4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

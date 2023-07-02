@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonAnChiTietActivity"
+    android:background="#ECE2F8">
+
+    <ImageView
+        android:id="@+id/ActiImg"
+        android:layout_width="202dp"
+        android:layout_height="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_1" />
+
+    <EditText
+        android:id="@+id/actiNam"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="16dp"
+
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:hint="Nhập tên"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+
+
+        android:layout_height="58.50dp"
+        android:textColorHint="@color/secondaryText"
+        android:drawablePadding="10.40dp"
+        android:textSize="15.60dp"
+
+
+        android:textStyle="bold"
+        android:background="@drawable/bg_input"
+
+        android:paddingStart="26dp"
+
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/actiChuThich"
+        android:layout_width="match_parent"
+
+        android:paddingLeft="5dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+
+        android:textColor="@color/black"
+
+
+
+
+        android:textColorHint="@color/secondaryText"
+        android:drawablePadding="10.40dp"
+        android:textSize="15.60dp"
+
+
+        android:textStyle="bold"
+        android:background="@drawable/bg_input"
+
+        android:paddingStart="26dp"
+
+        android:hint="Nhập chú thích"
+        android:inputType="textMultiLine"
+        android:minHeight="50dp"
+        android:textAlignment="textStart"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actiNam"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <EditText
+        android:id="@+id/actiDiaChi"
+        android:paddingLeft="5dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+
+
+        android:textColor="@color/black"
+
+
+
+        android:textColorHint="@color/secondaryText"
+        android:drawablePadding="10.40dp"
+        android:textSize="15.60dp"
+
+
+        android:textStyle="bold"
+        android:background="@drawable/bg_input"
+
+        android:paddingStart="26dp"
+
+        android:layout_width="match_parent"
+
+
+
+        android:hint="Nhập địa chỉ"
+        android:inputType="text"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actiChuThich"
+        tools:ignore="SpeakableTextPresentCheck"
+       />
+
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/ActiCam"
+        android:layout_width="79dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/cam"
+        android:background="@drawable/mybutton"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ActiImg" />
+
+    <ImageButton
+        android:id="@+id/ActiLib"
+        android:layout_width="79dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/mybutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@+id/ActiCam"
+        app:layout_constraintTop_toBottomOf="@+id/ActiImg"
+        app:srcCompat="@drawable/library"
+/>
+
+    <ImageButton
+        android:id="@+id/ActiSave"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/mybutton_black"
+        app:layout_constraintEnd_toStartOf="@+id/ActiDel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actiDiaChi"
+        app:srcCompat="@drawable/diskette"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ActiDel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/mybutton_red"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/ActiSave"
+        app:layout_constraintTop_toBottomOf="@+id/actiDiaChi"
+        app:srcCompat="@drawable/cancel"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
