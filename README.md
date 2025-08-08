@@ -1,5 +1,4 @@
 FoodApp
-//BTL môn Lập trình trên thiết bị di động
 
 Xây dựng ứng dụng trên thiết bị di động giúp cho người dùng có một ứng dụng để ghi chú những món ăn của mình để biết mình đã và sẽ muốn ăn gì từ đó tối ưu hiệu quả việc lưu trữ cũng như chọn địa điểm ăn uống phù hợp.
 
